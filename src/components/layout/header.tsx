@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../images/logo.png";
 import Image from "next/image";
 import ToggleIcon from "../icons/toggle";
+import MenuIcon from "../icons/menu";
 
 const Header = () => {
   return (
@@ -16,7 +17,9 @@ const Header = () => {
           <span className="icon">
             <ToggleIcon />
           </span>
-          <span className="menu">Circle</span>
+          <span className="menu">
+            <MenuIcon />
+          </span>
         </div>
       </nav>
     </header>
