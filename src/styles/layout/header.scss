@@ -1,0 +1,30 @@
+header {
+  @apply fixed top-0 left-0 h-[50px] w-full bg-slate-500 overflow-hidden;
+
+  .nav__container {
+    @apply flex justify-between items-center w-[96%] h-full m-auto bg-red-200;
+
+    &-logo {
+      @apply bg-blue-300 h-full flex justify-start items-center gap-2;
+
+      img {
+        @apply h-[70%] w-auto;
+      }
+    }
+
+    &-options {
+      @apply flex gap-2;
+      span {
+        @apply border border-[#000] rounded-full px-3;
+      }
+
+      .contact {
+        @apply border-transparent bg-slate-300;
+      }
+
+      .icon {
+        @apply border-transparent bg-slate-300;
+      }
+    }
+  }
+}
