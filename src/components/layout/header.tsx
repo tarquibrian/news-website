@@ -3,11 +3,9 @@ import logo from "../../images/logo.png";
 import Image from "next/image";
 import ToggleIcon from "../icons/toggle";
 import MenuIcon from "../icons/menu";
-import { useAppContext } from "@/context/app.context";
 import { useTheme } from "next-themes";
 
 const Header = () => {
-  // const { state, toggleTheme } = useAppContext();
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   console.log({ theme, systemTheme });
@@ -16,7 +14,7 @@ const Header = () => {
     <header className="">
       <nav className="nav__container">
         <div className="nav__container-logo">
-          <Image src={logo} alt="image logo" className=""></Image>
+          <Image src={logo} alt="image logo"></Image>
           <span className="">News Website</span>
         </div>
         <div className="nav__container-options">
