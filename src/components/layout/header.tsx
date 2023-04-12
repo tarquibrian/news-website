@@ -13,9 +13,7 @@ const Header = () => {
   console.log({ theme, systemTheme });
 
   return (
-    <header
-      className={`${state.theme === "dark" ? "theme-dark" : "theme-dark"}`}
-    >
+    <header className="">
       <nav className="nav__container">
         <div className="nav__container-logo">
           <Image src={logo} alt="image logo" className=""></Image>

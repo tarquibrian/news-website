@@ -12,9 +12,8 @@ module.exports = {
         redish: "#1d3557",
       },
       textColor: {
-        skin: {
-          base: "var(--text-color)",
-        },
+        white: "#ffffff",
+        black: "#000000",
       },
       backgroundColor: {
         skin: {
@@ -27,6 +26,10 @@ module.exports = {
         light: {
           fill: "#f8f9fa",
         },
+      },
+      borderColor: {
+        white: "#ffffff",
+        black: "#000000",
       },
     },
   },

@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply dark:bg-redish bg-skin-fill;
+  @apply bg-light-fill text-black dark:bg-dark-fill  dark:text-white;
 }
 
 main {
