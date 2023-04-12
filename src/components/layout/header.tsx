@@ -11,7 +11,7 @@ const Header = () => {
   console.log({ theme, systemTheme });
 
   return (
-    <header className="">
+    <header className="header">
       <nav className="nav__container">
         <div className="nav__container-logo">
           <Image src={logo} alt="image logo"></Image>
