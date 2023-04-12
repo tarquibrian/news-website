@@ -25,22 +25,24 @@
   }
 }
 
-@layer base {
-  body {
-    @apply dark:bg-gray-800 bg-white;
-  }
+// @layer base {
+//   body {
+//     @apply dark:bg-gray-800 bg-white;
+//   }
+// }
+* {
+  transition: 0.1s;
 }
 
 body {
-  // @apply dark:bg-gray-800 bg-white
+  @apply dark:bg-gray-800 bg-white;
   // color: #000;
   // background-color: rgba(248, 249, 250, 1);
-  // background-color: $bgdark;;;
+  // background-color: $bgdark;;;;;
 }
 
 main {
   margin-top: 50px;
   width: calc(100% - 60px);
   margin-inline: auto;
-  @apply text-skin-base bg-skin-fill;
 }

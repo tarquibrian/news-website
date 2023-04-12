@@ -10,6 +10,7 @@ const Header = () => {
   const { state, toggleTheme } = useAppContext();
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
+  console.log({ theme, systemTheme });
 
   return (
     <header
