@@ -12,7 +12,7 @@ const MenuIcon = () => (
     strokeLinejoin="round"
   >
     <title>Menu</title>
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path stroke="none" d="M1 0h24v24H0z" fill="none"></path>
     <path d="M1 9l22 0"></path>
     <path d="M1 15l22 0"></path>
   </svg>

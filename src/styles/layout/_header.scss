@@ -1,5 +1,11 @@
 header {
-  @apply fixed top-0 left-0 h-[60px] w-screen overflow-hidden grid items-center;
+  @apply fixed 
+    top-0 
+    left-0 h-[60px] 
+    w-screen 
+    overflow-hidden 
+    grid 
+    items-center;
 
   .nav__container {
     @apply h-[50%] flex justify-between items-start w-[calc(100%-60px)] m-auto;
@@ -13,13 +19,19 @@ header {
     }
 
     &-options {
-      @apply flex gap-2;
+      @apply flex gap-2 items-center;
+
+      button {
+        svg {
+          @apply h-[34px] w-[34px];
+        }
+      }
       span {
-        @apply flex items-center cursor-pointer h-[30px] font-bold text-[.8rem] border border-[#000] rounded-full px-3 bg-[#dee2e6];
+        @apply flex items-center cursor-pointer h-[30px] text-[.8rem] border border-[#000] rounded-full px-3 bg-[#dee2e6] dark:bg-slate-500;
       }
 
       .contact {
-        @apply border-transparent;
+        @apply border-transparent font-semibold;
       }
 
       .icon {
@@ -27,7 +39,7 @@ header {
       }
 
       .menu {
-        @apply bg-transparent;
+        @apply bg-transparent dark:bg-transparent dark:border-white;
       }
     }
   }

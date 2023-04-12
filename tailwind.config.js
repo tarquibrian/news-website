@@ -8,18 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        redish: "#1d3557",
-      },
       textColor: {
         white: "#ffffff",
         black: "#000000",
       },
       backgroundColor: {
-        skin: {
-          fill: "var(--bg-color)",
-          indicator: "var(--fill-color-indicator)",
-        },
         dark: {
           fill: "#1d3557",
         },

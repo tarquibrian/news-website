@@ -10,11 +10,16 @@
 }
 
 body {
-  @apply bg-light-fill text-black dark:bg-dark-fill  dark:text-white;
+  @apply bg-light-fill text-black dark:bg-dark-fill dark:text-white;
 }
 
 main {
   margin-top: 50px;
+  width: calc(100% - 60px);
+  margin-inline: auto;
+}
+
+footer {
   width: calc(100% - 60px);
   margin-inline: auto;
 }
