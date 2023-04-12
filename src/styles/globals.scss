@@ -5,40 +5,12 @@
 @import "./layout/header.scss";
 @import "./variables";
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --foreground-rgb: 255, 255, 255;
-//     --background-start-rgb: 0, 0, 0;
-//     --background-end-rgb: 0, 0, 0;
-//   }
-// }
-
-@layer base {
-  :root {
-    --text-color: #000000;
-    --bg-color: #f8f9fa;
-  }
-
-  .theme-dark {
-    --text-color: #ffffff;
-    --bg-color: #1d3557;
-  }
-}
-
-// @layer base {
-//   body {
-//     @apply dark:bg-gray-800 bg-white;
-//   }
-// }
 * {
   transition: 0.1s;
 }
 
 body {
-  @apply dark:bg-gray-800 bg-white;
-  // color: #000;
-  // background-color: rgba(248, 249, 250, 1);
-  // background-color: $bgdark;;;;;
+  @apply dark:bg-redish bg-skin-fill;
 }
 
 main {

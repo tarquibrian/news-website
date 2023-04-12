@@ -1,5 +1,5 @@
 header {
-  @apply bg-white dark:bg-gray-800 fixed top-0 left-0 h-[60px] w-screen overflow-hidden grid items-center;
+  @apply fixed top-0 left-0 h-[60px] w-screen overflow-hidden grid items-center;
 
   .nav__container {
     @apply h-[50%] flex justify-between items-start w-[calc(100%-60px)] m-auto;
