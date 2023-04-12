@@ -3,10 +3,18 @@ import logo from "../../images/logo.png";
 import Image from "next/image";
 import ToggleIcon from "../icons/toggle";
 import MenuIcon from "../icons/menu";
+import { useAppContext } from "@/context/app.context";
+import { useTheme } from "next-themes";
 
 const Header = () => {
+  const { state, toggleTheme } = useAppContext();
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
   return (
-    <header className="header__section">
+    <header
+      className={`${state.theme === "dark" ? "theme-dark" : "theme-dark"}`}
+    >
       <nav className="nav__container">
         <div className="nav__container-logo">
           <Image src={logo} alt="image logo" className=""></Image>
@@ -14,9 +22,12 @@ const Header = () => {
         </div>
         <div className="nav__container-options">
           <span className="contact">Contact Now</span>
-          <span className="icon">
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="icon"
+          >
             <ToggleIcon />
-          </span>
+          </button>
           <span className="menu">
             <MenuIcon />
           </span>

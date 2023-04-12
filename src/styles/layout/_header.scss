@@ -1,0 +1,34 @@
+header {
+  @apply bg-gray-800 dark:bg-gray-50 fixed top-0 left-0 h-[60px] w-screen overflow-hidden grid items-center;
+
+  .nav__container {
+    @apply h-[50%] flex justify-between items-start w-[calc(100%-60px)] m-auto;
+
+    &-logo {
+      @apply h-full flex justify-start items-center gap-2 font-bold;
+
+      img {
+        @apply h-[30px] w-auto;
+      }
+    }
+
+    &-options {
+      @apply flex gap-2;
+      span {
+        @apply flex items-center cursor-pointer h-[30px] font-bold text-[.8rem] border border-[#000] rounded-full px-3 bg-[#dee2e6];
+      }
+
+      .contact {
+        @apply border-transparent;
+      }
+
+      .icon {
+        @apply border-transparent;
+      }
+
+      .menu {
+        @apply bg-transparent;
+      }
+    }
+  }
+}
